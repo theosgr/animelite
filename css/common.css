@@ -20,26 +20,26 @@
     border: 1px solid lightgoldenrodyellow;
   }
 
-  ul {
+  header ul {
     display: inline-flex;
     list-style-type: none;
     margin: 0px;
     padding: 0px;
   }
 
-  ul li {
+  header ul li {
     margin-left: 50px;
     width: 75%;
   }
 
-  ul li a {
+  header ul li a {
     text-decoration: none;
     color: whitesmoke;
     font-family: Raleway, sans-serif;
     font-size: 50px;
   }
 
-  ul li a:hover {
+  header ul li a:hover {
     opacity: 0.6;
     transition-duration: 0.2s;
   }
@@ -73,9 +73,7 @@
   }
 }
 
-#site-icon {
-  width: 300px;
-}
+
 
 @media screen and (max-width: 900px) {
   header {
@@ -91,7 +89,7 @@
     font-family: Raleway, sans-serif;
   }
 
-  nl header ul {
+  header ul {
     margin: 10px auto;
     padding: 0px;
     display: block;
@@ -126,4 +124,8 @@
     position: fixed;
     bottom: 0;
   }
+}
+
+#site-icon {
+  width: 300px;
 }

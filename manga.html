@@ -3,16 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="manga" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="css/nav.css" />
-    <link rel="stylesheet" type="text/css" href="css/styleDesktop.css" />
-    <link rel="stylesheet" type="text/css" href="css/styleMobile.css" />
-    <link rel="stylesheet" type="text/css" href="css/slideShow.css" />
+
+    <link rel="shortcut icon" type="image/svg" href="image/LogoAnimeLite.svg" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/anime.css" />
 
     <link
       href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
       rel="stylesheet"
     />
-    <title>Mangavis - Manga</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/materializeDesign/css/materialize.css" />
+    <title>AnimeLite - Manga</title>
   </head>
   <body>
     <search>
@@ -20,14 +31,31 @@
       <!--<a href="#"><img src="./img/search.png"></a>-->
     </search>
     <header>
-      <nav>
+      <nav id="myNav">
         <div id="mySidenav" class="sidenav">
-          <ul>
-            <li class="nav"><a href="anime.html">Animé</a></li>
-            <li class="nav"><a href="manga.html">Mangas</a></li>
-            <li class="nav"><a href="#">Classement</a></li>
-          </ul>
+          <div>
+            <ul class="menu" id="menu">
+              <li class="my-nav">
+                <a href="index.html">
+                  <img src="./img/AnimeLitelogo_banner.PNG" id="site-icon"
+                /></a>
+              </li>
+              <li class="nav"><a href="anime.html">Animé</a></li>
+              <li class="nav"><a href="manga.html">Mangas</a></li>
+              <li class="nav"><a href="#">Communauté</a></li>
+            </ul>
+          </div>
+          <div>
+            <search>
+              <div class="form-group_has-search">
+                <span class="fa fa-search form-control-feedback"></span>
+                <input type="text" class="form-control" placeholder="Search" />
+              </div>
+            </search>
+          </div>
         </div>
+      </nav>
+    </header>
         <!-- Version mobile nav 
         <div class="nav_mobile">
             <a href="javascript:void(0)">
@@ -35,8 +63,6 @@
               <img src="datas/img/icon.svg" class="main-icon-mobile" />
             </a>
           </div>-->
-      </nav>
-    </header>
 
     <main>
       <section>
