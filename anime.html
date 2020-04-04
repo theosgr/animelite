@@ -12,35 +12,34 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
     <link rel="stylesheet" href="/css/materializeDesign/css/materialize.css" />
+    <script src="https://kit.fontawesome.com/c94c4dd3d6.js" crossorigin="anonymous"></script>
     <title>AnimeLite - Animé</title>
   </head>
   <body>
 
-    <header>
-      <nav id="myNav">
-        <div id="mySidenav" class="sidenav">
-          <div>
-            <ul class="menu" id="menu">
-              <li class="my-nav">
-                <a href="index.html">
-                  <img src="./img/AnimeLitelogo_banner.PNG" id="site-icon"
-                /></a>
-              </li>
-              <li class="nav selected"><a href="anime.html">Animé</a></li>
-              <li class="nav"><a href="manga.html">Mangas</a></li>
-              <li class="nav"><a href="communaute.html">Communauté</a></li>
-            </ul>
-          </div>
-          <div>
-            <search>
-              <div class="form-group_has-search">
-                <span class="fa fa-search form-control-feedback"></span>
-                <input type="text" class="form-control" placeholder="Search" />
-              </div>
-            </search>
-          </div>
+    <header class="containeur-fluid header">
+
+      <div class="sidebar">
+
+        <nav id="section nav" class="nav">
+          <ul class="menu" id="menu">
+            <li class="my-nav">
+              <a href="index.html">
+                <img src="./img/AnimeLitelogo_banner.PNG" id="site-icon"/></a>
+            </li>
+            <li ><a class="selected" href="anime.html">Animé</a></li>
+            <li ><a class="nonsel" href="manga.html">Mangas</a></li>
+            <li ><a class="nonsel" href="communaute.html">Communauté</a></li>
+             
+          </ul>
+        </nav>
+
+        <div class=" section search"> 
+          <a href="#"><i class="fa fa-search"></i></a>
+          <input type="text" name="search-term" class="text-input" placeholder="Recherche">
         </div>
-      </nav>
+
+      </div>
     </header>
         <!-- Version mobile nav 
         <div class="nav_mobile">
@@ -48,42 +47,147 @@
               <i onclick="openNav()" class="material-icons burger">menu</i>
               <img src="datas/img/icon.svg" class="main-icon-mobile" />
             </a>
-          </div>-->
-      </nav>
-    </header>
+          </div>
+        -->
+      
+    
+          
 
     <main>
-      <section class="class_choice" >
-        <article>
-          Choix de classement
-        </article>
-      </section>
+      <section>
+        <div class="class_choice">
+          Salut ici c'est les critères
+          <div>
+            <input type="radio" id="top_not" name="classement" value="top_not"
+                   checked>
+            <label for="top_not">Mieux notés</label>
 
-      <section class="print_class">
-        <article >
-          Classement
-        </article>
+            <input type="radio" id="top_pop" name="classement" value="top_pop">
+            <label for="top_pop">Plus populaire</label>
+          </div>
+        </div>
+        <div class="print_class">
+          <table>
+            <tr class="table_header">
+              <td class="rank">Rank</td>
+              <td class="title">Title</td>
+              <td class="score">Score</td>
+            </tr>
+
+            <tr class="table_line">
+
+              <td class="rank_line">
+                <span class="rank_number">1</span>
+              </td>
+
+              <td class="title_line">
+                <a href="#">
+                  <img width="50" height="70" src="./img/snk.png" />
+                </a>
+                <div class="di-ib clearfix">
+                  <a class="title_name" href="#">Attaque des titans</a>
+                </div>
+              </td>
+
+              <td class="score_line">
+                <i class="fas fa-star" style="color:yellow"></i>
+                <span class="score_number">9</span>
+              </td>
+            </tr>
+
+            <tr class="table_line">
+
+              <td class="rank_line">
+                <span class="rank_number">2</span>
+              </td>
+
+              <td class="title_line">
+                <a href="#">
+                  <img width="50" height="70" src="./img/op.png" />
+                </a>
+                <div class="di-ib clearfix">
+                  <a class="title_name" href="#">One piece</a>
+                </div>
+              </td>
+
+              <td class="score_line">
+                <i class="fas fa-star" style="color:yellow"></i>
+                <span class="score_number">8.5</span>
+              </td>
+            </tr>
+
+            <tr class="table_line">
+
+              <td class="rank_line">
+                <span class="rank_number">3</span>
+              </td>
+
+              <td class="title_line">
+                <a href="#">
+                  <img width="50" height="70" src="./img/fma.png" />
+                </a>
+                <div class="di-ib clearfix">
+                  <a class="title_name" href="#">Full Metal Alchemist</a>
+                </div>
+              </td>
+
+              <td class="score_line">
+                <i class="fas fa-star" style="color:yellow"></i>
+                <span class="score_number">8.2</span>
+              </td>
+            </tr>
+          </table>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <div class="foot_top">
-        <ul>
-          <li>About</li>
-          <li>Contact Us</li>
-          <li>Support</li>
-          <li>Legal Mention</li>
-        </ul>
-      </div>
-      <div class="foot_bot">
-        <div class="foot-left">
-
+    <footer class="container-fluid footer">
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h1 class="logo-text"><span>Anime</span>Lite</h1>
+          <p>
+            AnimeLite est un site web fictif créé par 3 étudiants en DUT Informatique à Nantes dans le cadre d'une évaluation. 
+          </p>
+          <div class="contact">
+            <span><i class="fas fa-phone"> </i>  &nbsp; 0203040506</span>
+            <span><i class="fas fa-envelope"> </i>  &nbsp; info@animelite.com</span>
+          </div>
+          <div class="socials">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
         </div>
+          <div class="footer-section links">
+            <h2> Liens rapides </h2>
+            <br>
+            <ul> 
+              <a href="#"><li>A propos de nous</li></a>
+              <a href="#"><li>Mentions Légales</li></a>
+              <a href="#"><li>Equipe</li></a>
+              <a href="#"><li>Galerie</li></a>
+              <a href="#"><li>Evènements</li></a>
+            </ul>
+          </div>
+            <div class="footer-section contact-form">
+              <h2>Contactez-nous</h2>
+              <br>
+              <form>
+                <input type="email" name="email" class="text-input contact-input" placeholder="Votre adresse email ...">
+                <textarea name="message"  class="text-input contact-input" placeholder="Votre message..."></textarea>
+                <button type="submit" class="btn btn-big">Envoyer</button>
 
-        <div class="foot_right">
 
-        </div>
-      </div>
+              </form>
+            </div>
+          </div>     
+        
+    <div class="footer-bottom">
+      Copyright &copy; IUT de Nantes | 2019-2020 | Tous droits réservés
+    </div>
+    
     </footer>
+
   </body>
 </html>

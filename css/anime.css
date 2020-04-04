@@ -1,5 +1,52 @@
 @media screen and (min-width: 768px) {
   
+    section{
+        background: #CEC1BF ;
+        margin-right: 80px;
+        margin-left: 80px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .class_choice{
+        background: blue;
+        width: 100%;
+    }
+
+    .print_class{
+        background: green;
+        width: 100%;
+    }
+
+    .rank{
+        width: 10%;
+    }
+
+    .score{
+        width: 10%;
+    }
+
+    table{
+        width: 100%;
+    }
+
+    .title_line{
+        display: flex;
+        vertical-align: row;
+        justify-content: left;
+    }
+
+    .table_header td{
+        color : white;
+    }
+
+    .rank_number{
+        color: #888;
+        font-size: 36px;
+        font-family: arial;
+    }
+
 }
 
 
