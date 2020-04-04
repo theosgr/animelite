@@ -86,6 +86,17 @@
     align-items: center;
   }
 
+  main section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  main section article{
+    width: 30%;
+    border: 3px double black;
+  }
+
   footer {
     position: fixed;
     bottom: 0;
