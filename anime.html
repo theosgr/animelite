@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="anime" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="shortcut icon" type="image/svg" href="image/LogoAnimeLite.svg" />
     <link rel="stylesheet" type="text/css" href="css/common.css" />
     <link rel="stylesheet" type="text/css" href="css/anime.css" />
 
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
     <link rel="stylesheet" href="/css/materializeDesign/css/materialize.css" />
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="img/LogoAnimeLite.ico">
     <script src="https://kit.fontawesome.com/c94c4dd3d6.js" crossorigin="anonymous"></script>
     <title>AnimeLite - Animé</title>
   </head>
@@ -22,14 +22,16 @@
       <div class="sidebar">
 
         <nav id="section nav" class="nav">
+          <label for="toggle">&#9776;</label>
+          <input type="checkbox" id="toggle">
           <ul class="menu" id="menu">
             <li class="my-nav">
               <a href="index.html">
                 <img src="./img/AnimeLitelogo_banner.PNG" id="site-icon"/></a>
             </li>
             <li ><a class="selected" href="anime.html">Animé</a></li>
-            <li ><a class="nonsel" href="manga.html">Mangas</a></li>
-            <li ><a class="nonsel" href="communaute.html">Communauté</a></li>
+            <li ><a class="nonsel" href="#">Mangas</a></li>
+            <li ><a class="nonsel" href="#">Communauté</a></li>
              
           </ul>
         </nav>
@@ -41,48 +43,55 @@
 
       </div>
     </header>
-        <!-- Version mobile nav 
-        <div class="nav_mobile">
-            <a href="javascript:void(0)">
-              <i onclick="openNav()" class="material-icons burger">menu</i>
-              <img src="datas/img/icon.svg" class="main-icon-mobile" />
-            </a>
-          </div>
-        -->
-      
-    
           
 
-    <main>
+    <main  class="main">
       <section>
         <div class="class_choice">
-          Salut ici c'est les critères
-          <div>
-            <input type="radio" id="top_not" name="classement" value="top_not"
-                   checked>
-            <label for="top_not">Mieux notés</label>
 
-            <input type="radio" id="top_pop" name="classement" value="top_pop">
-            <label for="top_pop">Plus populaire</label>
+          <div class="choice1">
+            <input type="radio" id="rad1" name="classement1" value="top_not"
+                   checked>
+            <label for="rad1">Mieux notés</label>
+
+            <input type="radio" id="rad2" name="classement1" value="top_pop">
+            <label for="rad2">Plus populaire</label>
+          </div>
+
+          <div class="choice2">
+            <input type="radio" id="rad3" name="classement2" value="everyday"
+                   checked>
+            <label for="rad3">Depuis toujours</label>
+
+            <input type="radio" id="rad4" name="classement2" value="years">
+            <label for="rad4">Cette Année</label>
+
+            <input type="radio" id="rad5" name="classement2" value="season">
+            <label for="rad5">Cette saison</label>
+
+            <input type="radio" id="rad6" name="classement2" value="week">
+            <label for="rad6">Cette semaine</label>
           </div>
         </div>
+
+
         <div class="print_class">
           <table>
             <tr class="table_header">
-              <td class="rank">Rank</td>
-              <td class="title">Title</td>
-              <td class="score">Score</td>
+              <td class="rank tab_title">Rank</td>
+              <td class="title tab_title">Title</td>
+              <td class="score tab_title">Score</td>
             </tr>
 
             <tr class="table_line">
-
               <td class="rank_line">
                 <span class="rank_number">1</span>
               </td>
 
               <td class="title_line">
+               
                 <a href="#">
-                  <img width="50" height="70" src="./img/snk.png" />
+                  <img width="50" height="70" src="img/snk.png" />
                 </a>
                 <div class="di-ib clearfix">
                   <a class="title_name" href="#">Attaque des titans</a>
@@ -91,7 +100,7 @@
 
               <td class="score_line">
                 <i class="fas fa-star" style="color:yellow"></i>
-                <span class="score_number">9</span>
+                <span class="score_number">9.5</span>
               </td>
             </tr>
 
@@ -112,14 +121,161 @@
 
               <td class="score_line">
                 <i class="fas fa-star" style="color:yellow"></i>
-                <span class="score_number">8.5</span>
+                <span class="score_number">9.2</span>
               </td>
             </tr>
 
             <tr class="table_line">
-
+                
               <td class="rank_line">
                 <span class="rank_number">3</span>
+              </td>
+
+              <td class="title_line">
+                <a href="#">
+                  <img width="50" height="70" src="./img/dms.png" />
+                </a>
+                <div class="di-ib clearfix">
+                  <a class="title_name" href="#">Demon Slayer</a>
+                </div>
+              </td>
+
+              <td class="score_line">
+                <i class="fas fa-star" style="color:yellow"></i>
+                <span class="score_number">8.9</span>
+              </td>
+            </tr>
+
+            <tr class="table_line">
+                
+              <td class="rank_line">
+                <span class="rank_number">4</span>
+              </td>
+
+              <td class="title_line">
+                <a href="#">
+                  <img width="50" height="70" src="./img/dr_stone.png" />
+                </a>
+                <div class="di-ib clearfix">
+                  <a class="title_name" href="#">Dr. Stone</a>
+                </div>
+              </td>
+
+              <td class="score_line">
+                <i class="fas fa-star" style="color:yellow"></i>
+                <span class="score_number">8.8</span>
+              </td>
+            </tr>
+
+            <tr class="table_line">
+                
+              <td class="rank_line">
+                <span class="rank_number">5</span>
+              </td>
+
+              <td class="title_line">
+                <a href="#">
+                  <img width="50" height="70" src="./img/mha.png" />
+                </a>
+                <div class="di-ib clearfix">
+                  <a class="title_name" href="#">My Hero Academia</a>
+                </div>
+              </td>
+
+              <td class="score_line">
+                <i class="fas fa-star" style="color:yellow"></i>
+                <span class="score_number">8.6</span>
+              </td>
+            </tr>
+
+            <tr class="table_line">
+                
+              <td class="rank_line">
+                <span class="rank_number">6</span>
+              </td>
+
+              <td class="title_line">
+                <a href="#">
+                  <img width="50" height="70" src="./img/cg.png" />
+                </a>
+                <div class="di-ib clearfix">
+                  <a class="title_name" href="#">Code Geass</a>
+                </div>
+              </td>
+
+              <td class="score_line">
+                <i class="fas fa-star" style="color:yellow"></i>
+                <span class="score_number">8.3</span>
+              </td>
+            </tr>
+
+            <tr class="table_line">
+                
+              <td class="rank_line">
+                <span class="rank_number">7</span>
+              </td>
+
+              <td class="title_line">
+                <a href="#">
+                  <img width="50" height="70" src="./img/ac.png" />
+                </a>
+                <div class="di-ib clearfix">
+                  <a class="title_name" href="#">Assassination Classroom</a>
+                </div>
+              </td>
+
+              <td class="score_line">
+                <i class="fas fa-star" style="color:yellow"></i>
+                <span class="score_number">8.0</span>
+              </td>
+            </tr>
+
+            <tr class="table_line">
+                
+              <td class="rank_line">
+                <span class="rank_number">8</span>
+              </td>
+
+              <td class="title_line">
+                <a href="#">
+                  <img width="50" height="70" src="./img/opm.png" />
+                </a>
+                <div class="di-ib clearfix">
+                  <a class="title_name" href="#">One Punch Man</a>
+                </div>
+              </td>
+
+              <td class="score_line">
+                <i class="fas fa-star" style="color:yellow"></i>
+                <span class="score_number">7.9</span>
+              </td>
+            </tr>
+
+            <tr class="table_line">
+                
+              <td class="rank_line">
+                <span class="rank_number">9</span>
+              </td>
+
+              <td class="title_line">
+                <a href="#">
+                  <img width="50" height="70" src="./img/naruto.png" />
+                </a>
+                <div class="di-ib clearfix">
+                  <a class="title_name" href="#">Naruto Shippûden</a>
+                </div>
+              </td>
+
+              <td class="score_line">
+                <i class="fas fa-star" style="color:yellow"></i>
+                <span class="score_number">7.8</span>
+              </td>
+            </tr>
+
+            <tr class="table_line">
+                
+              <td class="rank_line">
+                <span class="rank_number">10</span>
               </td>
 
               <td class="title_line">
@@ -133,24 +289,29 @@
 
               <td class="score_line">
                 <i class="fas fa-star" style="color:yellow"></i>
-                <span class="score_number">8.2</span>
+                <span class="score_number">7.5</span>
               </td>
             </tr>
           </table>
         </div>
+
+        <div class="end_main">
+          <span class="more">Affichez plus</span>
+        </div>
       </section>
+
     </main>
 
-    <footer class="container-fluid footer">
+    <footer class="footer">
       <div class="footer-content">
         <div class="footer-section about">
-          <h1 class="logo-text"><span>Anime</span>Lite</h1>
+          <h2>AnimeLite</h2>
           <p>
             AnimeLite est un site web fictif créé par 3 étudiants en DUT Informatique à Nantes dans le cadre d'une évaluation. 
           </p>
           <div class="contact">
-            <span><i class="fas fa-phone"> </i>  &nbsp; 0203040506</span>
-            <span><i class="fas fa-envelope"> </i>  &nbsp; info@animelite.com</span>
+            <span><i class="fas fa-phone"></i>  &nbsp; 0203040506</span>
+            <span><i class="fas fa-envelope"></i>  &nbsp; info@animelite.com</span>
           </div>
           <div class="socials">
             <a href="#"><i class="fab fa-facebook"></i></a>
@@ -174,20 +335,23 @@
               <h2>Contactez-nous</h2>
               <br>
               <form>
-                <input type="email" name="email" class="text-input contact-input" placeholder="Votre adresse email ...">
-                <textarea name="message"  class="text-input contact-input" placeholder="Votre message..."></textarea>
-                <button type="submit" class="btn btn-big">Envoyer</button>
-
-
+                <input type="email" name="email" class="text-input contact-input" placeholder="Votre adresse email ...">         
+                <textarea name="message"  class="text-input contact-input" placeholder="Votre message..."></textarea>          
+                <button type="submit" class="btn btn-big">
+                  <i class="fas fa-envelope"></i>
+                  Envoyer
+                </button>
               </form>
             </div>
           </div>     
         
-    <div class="footer-bottom">
-      Copyright &copy; IUT de Nantes | 2019-2020 | Tous droits réservés
-    </div>
+          <div class="footer-bottom">
+            <p>Copyright &copy; IUT de Nantes | 2019-2020 | Tous droits réservés</p>
+          </div>
     
-    </footer>
+    </footer> 
 
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>

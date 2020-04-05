@@ -1,9 +1,6 @@
-@media screen and (min-width: 768px) {
-  
+@media screen and (min-width: 750px) {
 
-
-    section{
-        background: #CEC1BF ;
+    section{ 
         margin-right: 80px;
         margin-left: 80px;
         display: flex;
@@ -11,47 +8,182 @@
         text-align: center;
     }
 
-    .class_choice{
-        background: blue;
-        width: 100%;
+    .choice1{
+        margin-right: 50px;
     }
-
-    .print_class{
-        background: green;
-        width: 100%;
-    }
-
-    .rank{
-        width: 10%;
-    }
-
-    .score{
-        width: 10%;
-    }
-
-    table{
-        width: 100%;
-    }
-
-    .title_line{
-        display: flex;
-        vertical-align: row;
-        justify-content: left;
-    }
-
-    .table_header td{
-        color : white;
-    }
-
-    .rank_number{
-        color: #888;
-        font-size: 36px;
-        font-family: arial;
+    .choice2{
+        margin-left: 50px;
     }
 
 }
 
+@media only screen and (max-width: 750px) {
+    section{ 
+        margin-right: 10px;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 80px;
+    }
 
-@media screen and (max-width: 900px) {
-  
+    .choice1{
+        width: 50%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .choice2{
+        width: 50%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    top :17%;
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+.class_choice{
+    width: 100%;
+}
+
+.print_class{
+    width: 100%;
+}
+
+.rank{
+    width: 10%;
+}
+
+.score{
+    width: 10%;
+}
+
+table{
+    width: 100%;
+}
+
+.title_line{
+    display: flex;
+    vertical-align: row;
+    justify-content: left;
+    margin-top: 20px;
+}
+
+.table_header{
+    background-color: Silver;
+    height: 30px;
+}
+
+.table_line{
+    border-bottom: 1px solid;
+    height: 120px;
+}
+
+
+.title_name{    
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.title_line{
+    height: 80px;
+    display: flex;
+    align-items: center;   
+}
+
+.clearfix{
+    text-align: center;
+}
+
+
+.title_name:hover{
+    text-decoration: none;
+}
+
+.table_header td{
+    color : white;
+    height: 40px;
+}
+
+.rank_number{
+    color: #888;
+    font-size: 36px;
+    font-family: arial;
+}
+
+.score_number{
+    font-size: 18px;
+}
+
+.choice1 input, .choice2 input{
+    visibility:hidden;
+}
+
+.choice1 label, .choice2 label{
+    cursor: pointer;
+}
+
+.choice1 input:checked+label,  .choice2 input:checked+label{
+    background: #4C84FF;
+    color: white;
+    border-color: #4C84FF;
+    border-style: solid;
+    border-radius: 15px;
+}
+
+
+.choice1 input:hover+label,  .choice2 input:hover+label{
+    border-color: #4C84FF;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 15px;
+}
+
+
+
+.class_choice{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+}
+
+.end_main{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.more{
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.more:hover{
+    color:#6495ED;
+    text-decoration: underline;
+}
+
+table img:hover{
+    opacity: 0.8;
+    transition: all 0.3s;
+}
+
+.tab_title{
+    font-size: 18px;
+    font-weight: bold;
 }

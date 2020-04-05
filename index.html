@@ -25,50 +25,79 @@
       <div class="sidebar">
 
         <nav id="section nav" class="nav">
+          <label for="toggle">&#9776;</label>
+          <input type="checkbox" id="toggle">
           <ul class="menu" id="menu">
             <li class="my-nav">
               <a href="index.html">
                 <img src="./img/AnimeLitelogo_banner.PNG" id="site-icon"/></a>
             </li>
             <li ><a class="nonsel" href="anime.html">Animé</a></li>
-            <li ><a class="nonsel" href="manga.html">Mangas</a></li>
-            <li ><a class="nonsel" href="communaute.html">Communauté</a></li>
+            <li ><a class="nonsel" href="#">Mangas</a></li>
+            <li ><a class="nonsel" href="#">Communauté</a></li>
              
           </ul>
         </nav>
 
         <div class="section search"> 
           <a href="#"><i class="fa fa-search"></i></a>
-          <input type="text" name="search-term" class="text-input" placeholder="Recherche">
+          <input type="text" name="search-term" class="text-input search-input" placeholder="Recherche">
         </div>
 
       </div>
     </header>
-    
-    <!-- Version mobile nav 
-        <div class="nav_mobile">
-            <a href="javascript:void(0)">
-              <i onclick="openNav()" class="material-icons burger">menu</i>
-              <img src="datas/img/icon.svg" class="main-icon-mobile" />
-            </a>
-          </div>-->
   
-    <main class="container-fluid main">
-      <section>
-        <article class="Actu" id="Actu">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, aperiam aliquid? Explicabo saepe maxime repellendus expedita excepturi enim facilis consequatur consequuntur, commodi hic rem sint tenetur natus omnis ex autem!
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eos nam nesciunt fuga dolor, beatae ratione earum veritatis aut! Commodi veritatis, non laudantium laborum error aperiam ut quasi impedit soluta!
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae error laudantium omnis! Iusto quasi voluptate ut libero veritatis praesentium architecto quo? Laborum nulla soluta doloribus est officia obcaecati odio quos.
-        </article>
+  
+    <main class="main clearfix">
+      <section class="main-content">
+        <h1 class="recent-post-title">Nouveautés</h1>
+        <hr>
+        <article class="post">
+          <img src="img/kaguya-sama.png" width="400" height="500" class="post-image">
+          <div class="post-preview">
+            <h2><a href="https://www.ledojomanga.com/actualite/article/80565/kaguya-sama-wa-kokurasetai-va-avoir-une-saison-2" target="_BLANK">Kaguya-sama, vers une saison 2 pour cet animé à mourir de rire ! </a></h2>
+            <i class="fa fa-calendar-alt"> 03/04/2020</i>
+            <p class="preview-text">
+              Après l'énorme succès de la saison de Kaguya-sama Love is War, l'animé revient avec une saison 2 qui on l'espère sera à couper le souffle. Venez retrouver le président et toute son équipe dans cette comédie/romance à mourir de rire.
+            </p>
+            <a href="#" class="btn readmore">Lire plus ...</a>
+          </div>
 
-        <article class="Class" id="Class">
-          Classement
+        </article>
+        <article class="post">
+          <img src="img/kaguya-sama.png" width="400" height="500" class="post-image">
+          <div class="post-preview">
+            <h2><a href="https://www.ledojomanga.com/actualite/article/80565/kaguya-sama-wa-kokurasetai-va-avoir-une-saison-2" target="_BLANK">Kaguya-sama, vers une saison 2 pour cet animé à mourir de rire ! </a></h2>
+            <i class="fa fa-calendar-alt"> 03/04/2020</i>
+            <p class="preview-text">
+              Après l'énorme succès de la saison de Kaguya-sama Love is War, l'animé revient avec une saison 2 qui on l'espère sera à couper le souffle. Venez retrouver le président et toute son équipe dans cette comédie/romance à mourir de rire.
+            </p>
+            <a href="#" class="btn readmore">Lire plus ...</a>
+          </div>
+
+        </article>
+        <article class="post">
+          <img src="img/kaguya-sama.png" width="400" height="500" class="post-image">
+          <div class="post-preview">
+            <h2><a href="https://www.ledojomanga.com/actualite/article/80565/kaguya-sama-wa-kokurasetai-va-avoir-une-saison-2" target="_BLANK">Kaguya-sama, vers une saison 2 pour cet animé à mourir de rire ! </a></h2>
+            <i class="fa fa-calendar-alt"> 03/04/2020</i>
+            <p class="preview-text">
+              Après l'énorme succès de la saison de Kaguya-sama Love is War, l'animé revient avec une saison 2 qui on l'espère sera à couper le souffle. Venez retrouver le président et toute son équipe dans cette comédie/romance à mourir de rire.
+            </p>
+            <a href="#" class="btn readmore">Lire plus ...</a>
+          </div>
+
         </article>
       </section>
+
+      <section class="sidebar">
+
+      </section>
+      
     </main>
 
 
-    <footer class="container-fluid footer">
+    <footer class="footer">
       <div class="footer-content">
         <div class="footer-section about">
           <h2>AnimeLite</h2>
@@ -111,11 +140,14 @@
             </div>
           </div>     
         
-    <div class="footer-bottom">
-      Copyright &copy; IUT de Nantes | 2019-2020 | Tous droits réservés
-    </div>
+          <div class="footer-bottom">
+            <p>Copyright &copy; IUT de Nantes | 2019-2020 | Tous droits réservés</p>
+          </div>
     
     </footer>
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/app.js"></script>
 
   </body>
 </html>

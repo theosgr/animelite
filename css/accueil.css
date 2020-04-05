@@ -1,8 +1,91 @@
-@media screen and (min-width: 768px) {
-  
+@media screen and (min-width: 750px) {
+
+    .clearfix::after {
+        content:"";
+        display:block;
+        clear:both;
+    }
+     .main {
+         width: 90%;
+         margin: 30px auto 30px;
+         border: 1px solid red;
+     }
+
+     .main .main-content{
+         width:70%;
+         float:left;
+         border:1px solid blue;
+     }
+
+     .main .sidebar {
+         width:30%;
+         float:left;
+         border: 1px solid black;
+         height: 300px;
+     }
+
+     .main .main-content .recent-post-title {
+         margin: 20px;  
+     }
+
+     .main .main-content .post {
+         width: 95%;
+         height: 270px;
+         margin: 30px auto;
+         border-radius: 5px;
+         background:rgb(238, 238, 238);
+         position:relative;
+     }
+
+     .main .main-content .post .post-image {
+        width: 40%;
+        height:100%;
+        float:left;
+        border-radius:1.2em;
+     }
+
+     .main .main-content .post .post-preview {
+         padding: 10px;
+         width: 60%;
+         float:right;
+     }
+
+     .main .main-content a {
+         text-decoration:none;
+         color: rgb(82, 68, 68);
+     }
+
+     .main .main-content a:hover {
+        color:rgb(156, 129, 150);
+        transition: all 0.2s;
+    }
+
+    .fa-calendar-alt {
+        color:rgb(199, 108, 108);
+    }
+
+    .main .main-content .post .readmore {
+        position:absolute;
+        bottom: 10px;
+        right:10px;
+        color: white;
+    }
+
+     .recent-post-title{
+         font-family: Raleway, sans-serif;
+         font-weight:bold;
+         font-size:3.3em;
+         color:rgba(51, 39, 39, 0.925);
+     }
+
+     .preview-text {
+         font-family: Raleway, sans-serif;
+         color: rgb(65, 60, 60);
+         font-size: 1.3em;
+     }
 }
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 750px) {
   
 }
