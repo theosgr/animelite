@@ -76,6 +76,7 @@
          font-weight:bold;
          font-size:3.3em;
          color:rgba(51, 39, 39, 0.925);
+         text-shadow: grey 0.15em 0.09em 0.11em
      }
 
      .preview-text {
