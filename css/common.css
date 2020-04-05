@@ -83,7 +83,7 @@ html, body {
     flex-direction: row;
     justify-content: space-between;
     margin-right: 10px;
-    width:40%;
+    width:auto;
   }
 
   .header .nav .menu {
@@ -91,7 +91,7 @@ html, body {
     flex-direction : row; 
     align-items: center;
     list-style-type: none;
-    width: 75%;
+    width: auto;
     margin:0;
     width: auto;  
     padding:0;
@@ -184,7 +184,7 @@ html, body {
   }
   
   .footer .footer-content {
-    height:350px; 
+    height:300px; 
     display:flex;
   }
   
