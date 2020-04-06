@@ -5,24 +5,19 @@
         display:block;
         clear:both;
     }
+
      .main {
          width: 90%;
-         margin: 30px auto 30px;
-         border: 1px solid red;
+         margin-left:5%;
      }
 
      .main .main-content{
          width:70%;
          float:left;
-         border:1px solid blue;
+         margin-bottom: 50px;
      }
 
-     .main .sidebar {
-         width:30%;
-         float:left;
-         border: 1px solid black;
-         height: 300px;
-     }
+     
 
      .main .main-content .recent-post-title {
          margin: 20px;  
@@ -35,6 +30,7 @@
          border-radius: 5px;
          background:rgb(238, 238, 238);
          position:relative;
+         display:flex;
      }
 
      .main .main-content .post .post-image {
@@ -45,9 +41,12 @@
      }
 
      .main .main-content .post .post-preview {
-         padding: 10px;
+         padding: 1px;
          width: 60%;
          float:right;
+         display:block; 
+         overflow:hidden;
+         padding-left:10px;
      }
 
      .main .main-content a {
@@ -60,9 +59,7 @@
         transition: all 0.2s;
     }
 
-    .fa-calendar-alt {
-        color:rgb(199, 108, 108);
-    }
+    
 
     .main .main-content .post .readmore {
         position:absolute;
@@ -79,14 +76,90 @@
          text-shadow: grey 0.15em 0.09em 0.11em
      }
 
-     .preview-text {
-         font-family: Raleway, sans-serif;
-         color: rgb(65, 60, 60);
-         font-size: 1.3em;
-     }
+     
+
+     .main .sidebar {
+        width:30%;
+        float:left; 
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+
+    
+
+    .main .sidebar .first {
+        margin-top: 121px;
+    }
+
+    .pub{
+        width: auto;
+        height: auto;
+    }
+
+    .main .sidebar .news ul{
+        margin:20px;
+    }
+    .main .sidebar .news ul a {
+        display:block;
+        color: rgb(90, 81, 81);
+        font-size: 1.2em;
+        display:block;
+    }
+
+    .main .sidebar .news ul a:hover{
+        color: rgb(158, 137, 137);
+        text-decoration:none;
+        margin-left: 10px;
+        transition: all .3s;
+    }
+
 }
 
 
+.fa-calendar-alt {
+    color:rgb(199, 108, 108);
+}
+
+.preview-text {
+    font-family: Raleway, sans-serif;
+    color: rgb(65, 60, 60);
+    font-size: 1.1em;
+}
+
+.main .sidebar .news {
+    background:rgb(238, 238, 238);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
 @media screen and (max-width: 750px) {
   
+    section img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .main .main-content .post {
+        
+        background:rgb(238, 238, 238);
+    }
+
+    .main .sidebar .first {
+        margin-top: 40px;
+    }
+
+    .main .sidebar .news ul{
+        margin:20px;
+    }
+    .main .sidebar .news ul a {
+        display:block;
+        color: rgb(90, 81, 81);
+        font-size: 1.2em;
+        display:block;
+    }
+
 }

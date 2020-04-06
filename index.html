@@ -11,8 +11,10 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+    <link href="css/slideShow.css" type="text/css" rel="stylesheet"/>
     <link rel="shortcut icon" href="img/LogoAnimeLite.ico">
     <script src="https://kit.fontawesome.com/c94c4dd3d6.js" crossorigin="anonymous"></script>
+  
 
     
     <title>AnimeLite - Accueil</title>
@@ -46,9 +48,97 @@
 
       </div>
     </header>
+
+    <main>
+    <div class="slideshow-container" >
+			<div class="mySlides fade">
+				<img src="img/slide1.jpg" style="width:100%">
+				<div style="text-align:center" class="dots">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+					<span class="dot" onclick="currentSlide(4)"></span>
+					<span class="dot" onclick="currentSlide(5)"></span>
+				</div>
+			</div>
+			<div class="mySlides fade">
+				<img src="img/slide2.jpg" style="width:100%">
+				<div style="text-align:center" class="dots">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+					<span class="dot" onclick="currentSlide(4)"></span>
+					<span class="dot" onclick="currentSlide(5)"></span>
+				</div>
+			</div>
+			<div class="mySlides fade">
+				<img src="img/slide3.png" style="width:100%">
+				<div style="text-align:center" class="dots">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+					<span class="dot" onclick="currentSlide(4)"></span>
+					<span class="dot" onclick="currentSlide(5)"></span>
+				</div>
+			</div>
+			<div class="mySlides fade">
+				<img src="img/slide4.png" style="width:100%" >
+				<div style="text-align:center" class="dots">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+					<span class="dot" onclick="currentSlide(4)"></span>
+					<span class="dot" onclick="currentSlide(5)"></span>
+				</div>
+			</div>
+			<div class="mySlides fade">
+				<img src="img/slide5.jpg" style="width:100%">
+				<div style="text-align:center" class="dots">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+					<span class="dot" onclick="currentSlide(4)"></span>
+					<span class="dot" onclick="currentSlide(5)"></span>
+				</div>
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
   
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
   
-    <main class="main clearfix">
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+  
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+  
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {}
+          slides[slideIndex - 1].style.display = "block";
+      }
+    </script>
+  
+    
+    <div class="main clearfix">
+       
       <section class="main-content">
         <h1 class="recent-post-title">Nouveautés</h1>
         <hr>
@@ -64,6 +154,7 @@
           </div>
 
         </article>
+
         <article class="post">
           <img src="img/myhero.jpg" class="post-image">
           <div class="post-preview">
@@ -88,12 +179,50 @@
           </div>
 
         </article>
+
+        <article class="post">
+          <img src="img/persos.jpg" class="post-image">
+          <div class="post-preview">
+            <h2><a href="#" target="">Le TOP 10 de vos personnages préférés ! Alors qui est le personnage le plus apprécié ?</a></h2>
+            <i class="fa fa-calendar-alt"> 26/03/2020</i>
+            <p class="preview-text">
+              Découvrez (enfin) les résultats des votes sur vos personnages d'animés / mangas préférés. Vous avez été nombreux à répondre aux sondages, voici les résultats tant attendus. 
+            </p>
+            <a href="#" class="btn readmore">Lire plus ...</a>
+          </div>
+
+        </article>
       </section>
 
       <section class="sidebar">
+        <article class="news first">
+          <h2 class="section-title">Store <i class="fas fa-shopping-cart"></i></h2>
+          <ul>
+            <a href="#"><li>Tee-shirt</li></a>
+            <a href="#"><li>Sweats</li></a>
+            <a href="#"><li>Bas</li></a>
+            <a href="#"><li>Accessoires</li></a>
+            <a href="#"><li>Chaussures</li></a>
+            <a href="#"><li>Goodies</li></a>
+          </ul>
+        </article>
+        <article class="news">
+          <h2 class="section-title">Dernières sorties <i class="fas fa-exclamation-triangle"></i></h2>
+          <ul>
+            <a href="#"><li>Haikyuu!!: To the Top <i class="fas fa-thumbs-up"></i></li></a>
+            <a href="#"><li>Darwin's Game</li></a>
+            <a href="#"><li>BanG Dream! 3rd Season</li></a>
+            <a href="#"><li>Breakers</li></a>
+            <a href="#"><li>Rebirth</li></a>
+            <a href="#"><li>Overflow</li></a>
+            <a href="#"><li>Koisuru Asteroid</li></a>
+            <a href="#"><li>Pet</li></a> 
+            <a href="#"><li>Nekopara</li></a>
 
+          </ul>
+        </article>
       </section>
-      
+    <div>
     </main>
 
 
@@ -148,6 +277,7 @@
 
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="js/app.js"></script>
+   
 
   </body>
 </html>
